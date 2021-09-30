@@ -1,0 +1,20 @@
+io.insnRdata(31,20) === CSR_CYCLE
+|  io.insnRdata(31,20) === CSR_INSTRET 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER3 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER4   |  io.insnRdata(31,20) === CSR_HPMCOUNTER5   |  io.insnRdata(31,20) === CSR_HPMCOUNTER6   |  io.insnRdata(31,20) === CSR_HPMCOUNTER7 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER8   |  io.insnRdata(31,20) === CSR_HPMCOUNTER9   |  io.insnRdata(31,20) === CSR_HPMCOUNTER10  |  io.insnRdata(31,20) === CSR_HPMCOUNTER11 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER12  |  io.insnRdata(31,20) === CSR_HPMCOUNTER13  |  io.insnRdata(31,20) === CSR_HPMCOUNTER14  |  io.insnRdata(31,20) === CSR_HPMCOUNTER15 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER16  |  io.insnRdata(31,20) === CSR_HPMCOUNTER17  |  io.insnRdata(31,20) === CSR_HPMCOUNTER18  |  io.insnRdata(31,20) === CSR_HPMCOUNTER19 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER20  |  io.insnRdata(31,20) === CSR_HPMCOUNTER21  |  io.insnRdata(31,20) === CSR_HPMCOUNTER22  |  io.insnRdata(31,20) === CSR_HPMCOUNTER23 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER24  |  io.insnRdata(31,20) === CSR_HPMCOUNTER25  |  io.insnRdata(31,20) === CSR_HPMCOUNTER26  |  io.insnRdata(31,20) === CSR_HPMCOUNTER27 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER28  |  io.insnRdata(31,20) === CSR_HPMCOUNTER29  |  io.insnRdata(31,20) === CSR_HPMCOUNTER30  |  io.insnRdata(31,20) === CSR_HPMCOUNTER31 
+|  io.insnRdata(31,20) === CSR_CYCLEH 
+|  io.insnRdata(31,20) === CSR_INSTRETH 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER3H 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER4H   |  io.insnRdata(31,20) === CSR_HPMCOUNTER5H   |  io.insnRdata(31,20) === CSR_HPMCOUNTER6H   |  io.insnRdata(31,20) === CSR_HPMCOUNTER7H 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER8H   |  io.insnRdata(31,20) === CSR_HPMCOUNTER9H   |  io.insnRdata(31,20) === CSR_HPMCOUNTER10H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER11H 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER12H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER13H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER14H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER15H 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER16H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER17H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER18H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER19H 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER20H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER21H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER22H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER23H 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER24H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER25H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER26H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER27H 
+|  io.insnRdata(31,20) === CSR_HPMCOUNTER28H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER29H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER30H  |  io.insnRdata(31,20) === CSR_HPMCOUNTER31H

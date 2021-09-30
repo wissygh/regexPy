@@ -1,0 +1,260 @@
+///////////////////////////////////////////////////////
+// User CSRs
+///////////////////////////////////////////////////////
+
+// User trap setup
+CSR_USTATUS        = h000        // Not included (PULP_SECURE = 0)
+
+// Floating Point
+CSR_FFLAGS         = h001        // Included if FPU = 1
+CSR_FRM            = h002        // Included if FPU = 1
+CSR_FCSR           = h003        // Included if FPU = 1
+
+// User trap setup
+CSR_UTVEC          = h005        // Not included (PULP_SECURE = 0)
+
+// User trap handling
+CSR_UEPC           = h041        // Not included (PULP_SECURE = 0)
+CSR_UCAUSE         = h042        // Not included (PULP_SECURE = 0)
+
+///////////////////////////////////////////////////////
+// User Custom CSRs
+///////////////////////////////////////////////////////
+
+// Hardware Loop
+CSR_LPSTART0       = h800        // Custom CSR. Included if PULP_HWLP = 1
+CSR_LPEND0         = h801        // Custom CSR. Included if PULP_HWLP = 1
+CSR_LPCOUNT0       = h802        // Custom CSR. Included if PULP_HWLP = 1
+CSR_LPSTART1       = h804        // Custom CSR. Included if PULP_HWLP = 1
+CSR_LPEND1         = h805        // Custom CSR. Included if PULP_HWLP = 1
+CSR_LPCOUNT1       = h806        // Custom CSR. Included if PULP_HWLP = 1
+
+// User Hart ID
+CSR_UHARTID        = hCC0        // Custom CSR. User Hart ID
+
+// Privilege
+CSR_PRIVLV         = hCC1        // Custom CSR. Privilege Level
+
+///////////////////////////////////////////////////////
+// Machine CSRs
+///////////////////////////////////////////////////////
+
+// Machine trap setup
+CSR_MSTATUS        = h300
+CSR_MISA           = h301
+CSR_MIE            = h304
+CSR_MTVEC          = h305
+
+// Performance counters
+CSR_MCOUNTEREN     = h306
+CSR_MCOUNTINHIBIT  = h320
+CSR_MHPMEVENT3     = h323
+CSR_MHPMEVENT4     = h324
+CSR_MHPMEVENT5     = h325
+CSR_MHPMEVENT6     = h326
+CSR_MHPMEVENT7     = h327
+CSR_MHPMEVENT8     = h328
+CSR_MHPMEVENT9     = h329
+CSR_MHPMEVENT10    = h32A
+CSR_MHPMEVENT11    = h32B
+CSR_MHPMEVENT12    = h32C
+CSR_MHPMEVENT13    = h32D
+CSR_MHPMEVENT14    = h32E
+CSR_MHPMEVENT15    = h32F
+CSR_MHPMEVENT16    = h330
+CSR_MHPMEVENT17    = h331
+CSR_MHPMEVENT18    = h332
+CSR_MHPMEVENT19    = h333
+CSR_MHPMEVENT20    = h334
+CSR_MHPMEVENT21    = h335
+CSR_MHPMEVENT22    = h336
+CSR_MHPMEVENT23    = h337
+CSR_MHPMEVENT24    = h338
+CSR_MHPMEVENT25    = h339
+CSR_MHPMEVENT26    = h33A
+CSR_MHPMEVENT27    = h33B
+CSR_MHPMEVENT28    = h33C
+CSR_MHPMEVENT29    = h33D
+CSR_MHPMEVENT30    = h33E
+CSR_MHPMEVENT31    = h33F
+
+// Machine trap handling
+CSR_MSCRATCH       = h340
+CSR_MEPC           = h341
+CSR_MCAUSE         = h342
+CSR_MTVAL          = h343
+CSR_MIP            = h344
+
+// Physical memory protection (PMP)
+CSR_PMPCFG0        = h3A0        // Not included (USE_PMP = 0)
+CSR_PMPCFG1        = h3A1        // Not included (USE_PMP = 0)
+CSR_PMPCFG2        = h3A2        // Not included (USE_PMP = 0)
+CSR_PMPCFG3        = h3A3        // Not included (USE_PMP = 0)
+CSR_PMPADDR0       = h3B0        // Not included (USE_PMP = 0)
+CSR_PMPADDR1       = h3B1        // Not included (USE_PMP = 0)
+CSR_PMPADDR2       = h3B2        // Not included (USE_PMP = 0)
+CSR_PMPADDR3       = h3B3        // Not included (USE_PMP = 0)
+CSR_PMPADDR4       = h3B4        // Not included (USE_PMP = 0)
+CSR_PMPADDR5       = h3B5        // Not included (USE_PMP = 0)
+CSR_PMPADDR6       = h3B6        // Not included (USE_PMP = 0)
+CSR_PMPADDR7       = h3B7        // Not included (USE_PMP = 0)
+CSR_PMPADDR8       = h3B8        // Not included (USE_PMP = 0)
+CSR_PMPADDR9       = h3B9        // Not included (USE_PMP = 0)
+CSR_PMPADDR10      = h3BA        // Not included (USE_PMP = 0)
+CSR_PMPADDR11      = h3BB        // Not included (USE_PMP = 0)
+CSR_PMPADDR12      = h3BC        // Not included (USE_PMP = 0)
+CSR_PMPADDR13      = h3BD        // Not included (USE_PMP = 0)
+CSR_PMPADDR14      = h3BE        // Not included (USE_PMP = 0)
+CSR_PMPADDR15      = h3BF        // Not included (USE_PMP = 0)
+
+// Trigger
+CSR_TSELECT        = h7A0
+CSR_TDATA1         = h7A1
+CSR_TDATA2         = h7A2
+CSR_TDATA3         = h7A3
+CSR_TINFO          = h7A4
+CSR_MCONTEXT       = h7A8
+CSR_SCONTEXT       = h7AA
+
+// Debug/trace
+CSR_DCSR           = h7B0
+CSR_DPC            = h7B1
+
+// Debug
+CSR_DSCRATCH0      = h7B2
+CSR_DSCRATCH1      = h7B3
+
+// Hardware Performance Monitor
+CSR_MCYCLE         = hB00
+CSR_MINSTRET       = hB02
+CSR_MHPMCOUNTER3   = hB03
+CSR_MHPMCOUNTER4   = hB04
+CSR_MHPMCOUNTER5   = hB05
+CSR_MHPMCOUNTER6   = hB06
+CSR_MHPMCOUNTER7   = hB07
+CSR_MHPMCOUNTER8   = hB08
+CSR_MHPMCOUNTER9   = hB09
+CSR_MHPMCOUNTER10  = hB0A
+CSR_MHPMCOUNTER11  = hB0B
+CSR_MHPMCOUNTER12  = hB0C
+CSR_MHPMCOUNTER13  = hB0D
+CSR_MHPMCOUNTER14  = hB0E
+CSR_MHPMCOUNTER15  = hB0F
+CSR_MHPMCOUNTER16  = hB10
+CSR_MHPMCOUNTER17  = hB11
+CSR_MHPMCOUNTER18  = hB12
+CSR_MHPMCOUNTER19  = hB13
+CSR_MHPMCOUNTER20  = hB14
+CSR_MHPMCOUNTER21  = hB15
+CSR_MHPMCOUNTER22  = hB16
+CSR_MHPMCOUNTER23  = hB17
+CSR_MHPMCOUNTER24  = hB18
+CSR_MHPMCOUNTER25  = hB19
+CSR_MHPMCOUNTER26  = hB1A
+CSR_MHPMCOUNTER27  = hB1B
+CSR_MHPMCOUNTER28  = hB1C
+CSR_MHPMCOUNTER29  = hB1D
+CSR_MHPMCOUNTER30  = hB1E
+CSR_MHPMCOUNTER31  = hB1F
+
+CSR_MCYCLEH        = hB80
+CSR_MINSTRETH      = hB82
+CSR_MHPMCOUNTER3H  = hB83
+CSR_MHPMCOUNTER4H  = hB84
+CSR_MHPMCOUNTER5H  = hB85
+CSR_MHPMCOUNTER6H  = hB86
+CSR_MHPMCOUNTER7H  = hB87
+CSR_MHPMCOUNTER8H  = hB88
+CSR_MHPMCOUNTER9H  = hB89
+CSR_MHPMCOUNTER10H = hB8A
+CSR_MHPMCOUNTER11H = hB8B
+CSR_MHPMCOUNTER12H = hB8C
+CSR_MHPMCOUNTER13H = hB8D
+CSR_MHPMCOUNTER14H = hB8E
+CSR_MHPMCOUNTER15H = hB8F
+CSR_MHPMCOUNTER16H = hB90
+CSR_MHPMCOUNTER17H = hB91
+CSR_MHPMCOUNTER18H = hB92
+CSR_MHPMCOUNTER19H = hB93
+CSR_MHPMCOUNTER20H = hB94
+CSR_MHPMCOUNTER21H = hB95
+CSR_MHPMCOUNTER22H = hB96
+CSR_MHPMCOUNTER23H = hB97
+CSR_MHPMCOUNTER24H = hB98
+CSR_MHPMCOUNTER25H = hB99
+CSR_MHPMCOUNTER26H = hB9A
+CSR_MHPMCOUNTER27H = hB9B
+CSR_MHPMCOUNTER28H = hB9C
+CSR_MHPMCOUNTER29H = hB9D
+CSR_MHPMCOUNTER30H = hB9E
+CSR_MHPMCOUNTER31H = hB9F
+
+CSR_CYCLE          = hC00
+CSR_INSTRET        = hC02
+CSR_HPMCOUNTER3    = hC03
+CSR_HPMCOUNTER4    = hC04
+CSR_HPMCOUNTER5    = hC05
+CSR_HPMCOUNTER6    = hC06
+CSR_HPMCOUNTER7    = hC07
+CSR_HPMCOUNTER8    = hC08
+CSR_HPMCOUNTER9    = hC09
+CSR_HPMCOUNTER10   = hC0A
+CSR_HPMCOUNTER11   = hC0B
+CSR_HPMCOUNTER12   = hC0C
+CSR_HPMCOUNTER13   = hC0D
+CSR_HPMCOUNTER14   = hC0E
+CSR_HPMCOUNTER15   = hC0F
+CSR_HPMCOUNTER16   = hC10
+CSR_HPMCOUNTER17   = hC11
+CSR_HPMCOUNTER18   = hC12
+CSR_HPMCOUNTER19   = hC13
+CSR_HPMCOUNTER20   = hC14
+CSR_HPMCOUNTER21   = hC15
+CSR_HPMCOUNTER22   = hC16
+CSR_HPMCOUNTER23   = hC17
+CSR_HPMCOUNTER24   = hC18
+CSR_HPMCOUNTER25   = hC19
+CSR_HPMCOUNTER26   = hC1A
+CSR_HPMCOUNTER27   = hC1B
+CSR_HPMCOUNTER28   = hC1C
+CSR_HPMCOUNTER29   = hC1D
+CSR_HPMCOUNTER30   = hC1E
+CSR_HPMCOUNTER31   = hC1F
+
+CSR_CYCLEH         = hC80
+CSR_INSTRETH       = hC82
+CSR_HPMCOUNTER3H   = hC83
+CSR_HPMCOUNTER4H   = hC84
+CSR_HPMCOUNTER5H   = hC85
+CSR_HPMCOUNTER6H   = hC86
+CSR_HPMCOUNTER7H   = hC87
+CSR_HPMCOUNTER8H   = hC88
+CSR_HPMCOUNTER9H   = hC89
+CSR_HPMCOUNTER10H  = hC8A
+CSR_HPMCOUNTER11H  = hC8B
+CSR_HPMCOUNTER12H  = hC8C
+CSR_HPMCOUNTER13H  = hC8D
+CSR_HPMCOUNTER14H  = hC8E
+CSR_HPMCOUNTER15H  = hC8F
+CSR_HPMCOUNTER16H  = hC90
+CSR_HPMCOUNTER17H  = hC91
+CSR_HPMCOUNTER18H  = hC92
+CSR_HPMCOUNTER19H  = hC93
+CSR_HPMCOUNTER20H  = hC94
+CSR_HPMCOUNTER21H  = hC95
+CSR_HPMCOUNTER22H  = hC96
+CSR_HPMCOUNTER23H  = hC97
+CSR_HPMCOUNTER24H  = hC98
+CSR_HPMCOUNTER25H  = hC99
+CSR_HPMCOUNTER26H  = hC9A
+CSR_HPMCOUNTER27H  = hC9B
+CSR_HPMCOUNTER28H  = hC9C
+CSR_HPMCOUNTER29H  = hC9D
+CSR_HPMCOUNTER30H  = hC9E
+CSR_HPMCOUNTER31H  = hC9F
+
+// Machine information
+CSR_MVENDORID      = hF11
+CSR_MARCHID        = hF12
+CSR_MIMPID         = hF13
+CSR_MHARTID        = hF14
